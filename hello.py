@@ -1,3 +1,5 @@
+# Day 1: Dec 2, 2023
+
 # Look at python document at docs.python.org
 
 # This is one line comment
