@@ -1,7 +1,7 @@
 # Day 1: Dec 2, 2023
 # YouTube Link
 # https://youtu.be/nLRL_NcnK-4?si=HCmer8vpjqvXFKbw
-# From
+# From 00:00:00 - 01:04:00
 
 # Look at python document at docs.python.org
 
