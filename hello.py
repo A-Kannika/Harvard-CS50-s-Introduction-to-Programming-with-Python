@@ -76,8 +76,8 @@ name = input("What's your name? ").strip().capitalize().title()
 print(f"Hello, {name}" )
 print()
 
-# Find your own style and team's style
-
 # Split user's name into first name into first name and last name by whitespace
 first, last = name.split(" ")
 print(f"Hello, {first}" )
+
+# Find your own style and team's style
