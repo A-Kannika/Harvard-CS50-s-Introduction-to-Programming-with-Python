@@ -1,4 +1,7 @@
 # Day 1: Dec 2, 2023
+# YouTube Link
+# https://youtu.be/nLRL_NcnK-4?si=HCmer8vpjqvXFKbw
+# From
 
 # Look at python document at docs.python.org
 
@@ -71,5 +74,10 @@ print()
 # Take input, remove whitespace, and capitalize all words
 name = input("What's your name? ").strip().capitalize().title()
 print(f"Hello, {name}" )
+print()
 
-# Depends on your style and team's style
+# Find your own style and team's style
+
+# Split user's name into first name into first name and last name by whitespace
+first, last = name.split(" ")
+print(f"Hello, {first}" )
