@@ -1,7 +1,7 @@
 # Day 2: Dec 4, 2023
 # YouTube Link
 # https://youtu.be/nLRL_NcnK-4?si=HCmer8vpjqvXFKbw
-# From 02:38:00
+# From 02:38:00 - 02:46:30
 
 # use if-else
 name = input("What's your name? ")
