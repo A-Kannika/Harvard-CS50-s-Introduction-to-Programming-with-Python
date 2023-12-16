@@ -1,7 +1,7 @@
-# Day 3: Dec 13, 2023
+# Day 4: Dec 13, 2023
 # YouTube Link
 # https://youtu.be/nLRL_NcnK-4?si=HCmer8vpjqvXFKbw
-# From 04:07:00 -  04
+# From 04:07:00 -  04:51:45
 
 def main():
         x = get_int()
