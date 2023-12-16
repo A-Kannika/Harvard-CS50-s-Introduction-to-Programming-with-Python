@@ -1,7 +1,7 @@
 # Day 3: Dec 13, 2023
 # YouTube Link
 # https://youtu.be/nLRL_NcnK-4?si=HCmer8vpjqvXFKbw
-# From 04:07:00
+# From 04:07:00 -  04
 
 def main():
         x = get_int()
@@ -14,6 +14,11 @@ def main():
         print()
         x = get_int3()
         print(f"x3 is {x}")
+
+        print()
+        x = get_int_prompt("What's x? ")
+        print(f"x4 is {x}")
+
 
 def get_int() :
         # Error exception
@@ -42,4 +47,13 @@ def get_int3() :
                 except ValueError:
                         # use pass to go to the loop without amy prompt
                         pass
+
+def get_int_prompt(promt) :
+        # Error exception
+        while True:
+                try :
+                        return int(input(promt))       
+                except ValueError:
+                        pass
+
 main()
