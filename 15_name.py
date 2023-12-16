@@ -1,7 +1,7 @@
 # Day 4: Dec 13, 2023
 # YouTube Link
 # https://youtu.be/nLRL_NcnK-4?si=HCmer8vpjqvXFKbw
-# From 
+# From continue to 16_say.py
 
 # sys.argv[0] -> name of the program
 # sys.argv[1] -> the first argument after the name of the program
