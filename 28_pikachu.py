@@ -1,7 +1,7 @@
 # Day 5: Dec 18, 2023
 # YouTube Link
 # https://youtu.be/nLRL_NcnK-4?si=HCmer8vpjqvXFKbw
-# From 08:25:00
+# From 08:25:00 - 08:33:00
 
 # install pillow use: python3 -m pip install pillow
 # There is a bug the gif display 2 images at the same time
