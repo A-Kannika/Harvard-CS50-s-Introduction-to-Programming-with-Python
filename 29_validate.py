@@ -17,6 +17,7 @@ def valid_email():
         # . -> any character except a newline
         # * -> 0 or more repeatitions
         # + -> 1 or more repeatitions
+        # ? -> 0 or 1 repeatitions
         # r -> raw string
         # \ -> escape character
         # ^ -> matches the start of the string
@@ -33,8 +34,13 @@ def valid_email():
         # A|B -> either A or B -> for example (\w|\s) means word character or whitespace
         # (...) -> a group
         # (?:...) -> non-capturing version
+
+        # re.IGNORECASE
+        # re.MULTILINE
+        # re.DOTALL
+
     
-        if re.search(r"^\w+@\w+\.edu$", email):
+        if re.search(r"^\w+@(\w+\.)?\w+\.edu$", email, re.IGNORECASE):
                 print("Valid")
         else:
                 print("Invalid")
