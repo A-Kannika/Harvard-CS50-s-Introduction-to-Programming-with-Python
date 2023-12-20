@@ -24,12 +24,16 @@ def valid_email():
         # [] -> set of characters
         # [^] -> complementing the set
         # [^@] -> any character except @ -> re.search(r"^[^@]+@[^@]+\.edu$", email)
-        # [a-zA-Z0-9_] -> the set of the characters allowed to use, a-z & A-Z & 0-9 & _
+        # [a-zA-Z0-9_ ] -> the set of the characters allowed to use, a-z & A-Z & 0-9 & _ & (whitespace)
         # \w -> word character ... as well as numbers and the underscore
         # \W -> not a word character
         # \d -> decimal digit
         # \D -> not a decimal digit
         # \s -> whitespace characters
+        # A|B -> either A or B -> for example (\w|\s) means word character or whitespace
+        # (...) -> a group
+        # (?:...) -> non-capturing version
+
         
         if re.search(r"^\w+@\w+\.edu$", email):
                 print("Valid")
