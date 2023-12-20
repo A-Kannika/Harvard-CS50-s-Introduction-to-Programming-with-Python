@@ -33,8 +33,7 @@ def valid_email():
         # A|B -> either A or B -> for example (\w|\s) means word character or whitespace
         # (...) -> a group
         # (?:...) -> non-capturing version
-
-        
+    
         if re.search(r"^\w+@\w+\.edu$", email):
                 print("Valid")
         else:
