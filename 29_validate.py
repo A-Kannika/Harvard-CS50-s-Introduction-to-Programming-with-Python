@@ -1,7 +1,7 @@
-# Day 5: Dec 18, 2023
+# Day 6: Dec 19, 2023
 # YouTube Link
 # https://youtu.be/nLRL_NcnK-4?si=HCmer8vpjqvXFKbw
-# From 08:33:00
+# From 08:33:00 - 09:46:40
 
 # use re library
 import re
@@ -39,11 +39,21 @@ def valid_email():
         # re.MULTILINE
         # re.DOTALL
 
+        # (\w+\.)? -> this pattern either can be or cannot be there
+
+        # The more complex email regex from https://uibakery.io/regex-library/email-regex-python
+        # r"^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$" 
     
-        if re.search(r"^\w+@(\w+\.)?\w+\.edu$", email, re.IGNORECASE):
+        if re.search(r"^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$", email, re.IGNORECASE):
                 print("Valid")
         else:
                 print("Invalid")
+
+        # the class version
+        # if re.search(r"^(\w|\.)+@(\w+\.)?\w+\.edu$", email, re.IGNORECASE):
+        #         print("Valid")
+        # else:
+        #         print("Invalid")
         
 if __name__ == "__main__":
         main()
