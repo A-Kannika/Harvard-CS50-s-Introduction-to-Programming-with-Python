@@ -10,8 +10,6 @@ class Student:
 
 def main():
         student = get_student()
-        if student.name == "Padma":
-                student.house = "Revenclaw"
         print(f"{student.name} from {student.house} from get_student")
 
 def get_student():
