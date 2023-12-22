@@ -1,7 +1,7 @@
 # Day 8: Dec 20, 2023
 # YouTube Link
 # https://youtu.be/nLRL_NcnK-4?si=HCmer8vpjqvXFKbw
-# From 10:37:30
+# From 10:37:30 - continue in 33_student_class.py
 
 def main():
         name = get_name()
@@ -32,8 +32,7 @@ def main():
 
         print()
         student = get_student_dict2()
-        if student["name"] == "Padma":
-                student["house"] = "Revenclaw"
+        
         # use 'name' and 'house' inside the " "
         # good way to use dict because you can use keys (no index) -> less confused
         print(f"{student['name']} from {student['house']} from get_student_dict2")
