@@ -1,7 +1,7 @@
 # Day 8: Dec 20, 2023
 # YouTube Link
 # https://youtu.be/nLRL_NcnK-4?si=HCmer8vpjqvXFKbw
-# From 12:30:00
+# From 12:30:00 - 12:49:00
 
 import random
 
