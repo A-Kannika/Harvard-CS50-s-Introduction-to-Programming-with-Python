@@ -1,7 +1,7 @@
 # Day 8: Dec 20, 2023
 # YouTube Link
 # https://youtu.be/nLRL_NcnK-4?si=HCmer8vpjqvXFKbw
-# From continue from 34_student_class_methods.py
+# From continue from 34_student_class_methods.py - 12:24:30
 
 # make the class to create the proper Student Object
 class Student:
@@ -10,9 +10,6 @@ class Student:
         # it's an instance method to initialize 
 
         def __init__(self, name, house):
-                # use raise to catch an exception
-                if not name:
-                        raise ValueError("Missing Name")
                 self.name = name
                 self.house = house
 
@@ -20,6 +17,23 @@ class Student:
                 return f"{self.name} from {self.house}"
         
         # properties
+        # use @property to make python theat this method as a getter
+        @property
+        def name(self):
+                return self._name
+        
+        # decorators
+        # make this methods to the setter
+        # this setter method will get call anytime we use .house
+        # for example student.house
+        @name.setter
+        def name(self, name):
+                # use raise to catch an exception
+                if not name:
+                        raise ValueError("Missing Name")
+                self._name = name
+
+                # properties
         # use @property to make python theat this method as a getter
         @property
         def house(self):
